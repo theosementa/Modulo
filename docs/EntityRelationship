@@ -1,0 +1,20 @@
+erDiagram
+    FINANCIAL_GOAL {
+        uuid id PK
+        string name
+        string emoji
+        double goalAmount
+        date startDate
+        date endDate "NULL"
+    }
+
+    CONTRIBUTION {
+        uuid id PK
+        string name "NULL"
+        double amount
+        string type
+        date date
+        uuid financialGoal_id FK "NULL"
+    }
+
+    FINANCIAL_GOAL||--o{ CONTRIBUTION : "has"
