@@ -13,8 +13,11 @@ kotlin {
 
     sourceSets {
         commonMain.dependencies {
+            implementation(project(":core:models"))
             implementation(libs.androidx.room.runtime)
             implementation(libs.androidx.sqlite.bundled)
+            implementation(libs.paging.compose.common)
+            implementation(libs.paging.common)
         }
     }
 
