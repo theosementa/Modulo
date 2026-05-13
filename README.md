@@ -1,13 +1,13 @@
 # Modulo
 
-[![Build Status](https://app.bitrise.io/app/790a9c9c-63dd-4af3-bc6a-93f0a11dc921/status.svg?token=bUwSdF9KdJXfDBG9kyq0kA&branch=develop)](https://app.bitrise.io/app/790a9c9c-63dd-4af3-bc6a-93f0a11dc921)
+[![App Store](https://img.shields.io/badge/App%20Store-0D96F6?logo=app-store&logoColor=white)](https://apps.apple.com/us/app/modulo-track-your-savings/id6759111993)
 ![Kotlin](https://img.shields.io/badge/Kotlin_Multiplatform-2.x-7F52FF?logo=kotlin&logoColor=white)
 ![iOS](https://img.shields.io/badge/iOS-17%2B-000000?logo=apple&logoColor=white)
 ![Android](https://img.shields.io/badge/Android-coming_soon-3DDC84?logo=android&logoColor=white)
-[![Roadmap](https://img.shields.io/badge/Roadmap-GitHub%20Projects-34C759?logo=github)](https://github.com/theosementa/modulo-ios/projects)
-[![App Store](https://img.shields.io/badge/App%20Store-0D96F6?logo=app-store&logoColor=white)](https://apps.apple.com/us/app/modulo-track-your-savings/id6759111993)
-[![Figma](https://img.shields.io/badge/Figma-Design-F24E1E?logo=figma&logoColor=white)](https://www.figma.com/design/uTGmdDAvUopqBAdL5VSC8o/Modulo-v2?node-id=1-5&t=QwxXDSNasY1lKJvw-1)
+[![Build Status](https://app.bitrise.io/app/790a9c9c-63dd-4af3-bc6a-93f0a11dc921/status.svg?token=bUwSdF9KdJXfDBG9kyq0kA&branch=develop)](https://app.bitrise.io/app/790a9c9c-63dd-4af3-bc6a-93f0a11dc921)
 ![SonarQube](https://img.shields.io/badge/SonarQube-Analyzed-4E9BCD?logo=sonarqube&logoColor=white)
+[![Roadmap](https://img.shields.io/badge/Roadmap-GitHub%20Projects-34C759?logo=github)](https://github.com/theosementa/modulo-ios/projects)
+[![Figma](https://img.shields.io/badge/Figma-Design-F24E1E?logo=figma&logoColor=white)](https://www.figma.com/design/uTGmdDAvUopqBAdL5VSC8o/Modulo-v2?node-id=1-5&t=QwxXDSNasY1lKJvw-1)
 [![License: PolyForm NC](https://img.shields.io/badge/License-PolyForm%20NC%201.0-lightgrey)](./LICENSE)
 
 > A clean, focused savings tracker — set goals, log contributions, and watch your progress over time.
