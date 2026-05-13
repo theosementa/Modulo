@@ -31,7 +31,7 @@ dependencies {
 }
 
 android {
-    namespace = "com.sementa.modulo.models"
+    namespace = "com.sementa.modulo.database"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11

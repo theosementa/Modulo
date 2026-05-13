@@ -2,9 +2,11 @@ package com.sementa.modulo.models.domain
 
 import com.sementa.modulo.models.entity.FinancialGoalEntity
 import kotlin.time.Instant
+import kotlin.uuid.ExperimentalUuidApi
+import kotlin.uuid.Uuid
 
-data class FinancialGoalDomain(
-    val id: String,
+data class FinancialGoalDomain @OptIn(ExperimentalUuidApi::class) constructor(
+    val id: String = Uuid.random().toString(),
     val name: String,
     val emoji: String,
     val goalAmount: Double,
@@ -15,6 +17,7 @@ data class FinancialGoalDomain(
 
     fun toEntity(): FinancialGoalEntity {
         return FinancialGoalEntity(
+            id = id,
             name = name,
             emoji = emoji,
             goalAmount = goalAmount.toLong(),

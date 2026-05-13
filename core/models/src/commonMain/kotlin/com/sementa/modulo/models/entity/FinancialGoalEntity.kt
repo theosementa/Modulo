@@ -4,12 +4,10 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.sementa.modulo.models.domain.FinancialGoalDomain
 import kotlin.time.Instant
-import kotlin.uuid.ExperimentalUuidApi
-import kotlin.uuid.Uuid
 
 @Entity(tableName = "financial_goal")
-data class FinancialGoalEntity @OptIn(ExperimentalUuidApi::class) constructor(
-    @PrimaryKey val id: String = Uuid.random().toString(),
+data class FinancialGoalEntity(
+    @PrimaryKey val id: String,
     val name: String,
     val emoji: String,
     val goalAmount: Long,
