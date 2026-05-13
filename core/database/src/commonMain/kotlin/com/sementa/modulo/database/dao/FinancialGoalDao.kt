@@ -10,10 +10,7 @@ import kotlinx.coroutines.flow.Flow
 interface FinancialGoalDao {
 
     @Query("SELECT * FROM financial_goal")
-    suspend fun observeGoals(): Flow<List<FinancialGoalEntity>>
-
-    @Query("SELECT * FROM financial_goal WHERE id = :goalId")
-    fun observeGoal(goalId: String): Flow<FinancialGoalEntity>
+    suspend fun getGoals(): List<FinancialGoalEntity>
 
     @Query(
         """
@@ -21,7 +18,7 @@ interface FinancialGoalDao {
             FROM contribution WHERE financialGoalId = :goalId
             """
     )
-    fun observeCurrentAmount(goalId: String): Flow<Long>
+    suspend fun getCurrentAmount(goalId: String): Long
 
     @Upsert
     suspend fun saveGoal(entity: FinancialGoalEntity)
