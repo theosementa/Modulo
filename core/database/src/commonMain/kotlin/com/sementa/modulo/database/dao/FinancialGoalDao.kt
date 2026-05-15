@@ -21,7 +21,7 @@ interface FinancialGoalDao {
     suspend fun getCurrentAmount(goalId: String): Long
 
     @Upsert
-    suspend fun saveGoal(entity: FinancialGoalEntity)
+    suspend fun saveGoal(entity: FinancialGoalEntity): FinancialGoalEntity
 
     @Query("DELETE FROM financial_goal WHERE id =:goalId")
     suspend fun deleteGoal(goalId: String)

@@ -21,12 +21,15 @@ kotlin {
         iosTarget.binaries.framework {
             baseName = "Shared"
             isStatic = true
+            export(project(":core:models"))
+            export(project(":core:datasource"))
         }
     }
     
     sourceSets {
         commonMain.dependencies {
-            implementation(project(":core:models"))
+            api(project(":core:models"))
+            api(project(":core:datasource"))
             implementation(libs.androidx.room.runtime)
             implementation(libs.androidx.sqlite.bundled)
         }
