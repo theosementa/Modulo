@@ -28,8 +28,8 @@ class DefaultFinancialGoalDataSource(
     override suspend fun saveGoal(goal: FinancialGoalDomain): Result<Unit> {
         try {
             val financialGoalEntity = goal.toEntity()
-            val finalEntity = repository.saveGoal(financialGoalEntity)
-            add(finalEntity.toDomain())
+            repository.saveGoal(financialGoalEntity)
+            add(financialGoalEntity.toDomain())
             return Result.success(Unit)
         } catch (e: Exception) {
             return Result.failure(e)

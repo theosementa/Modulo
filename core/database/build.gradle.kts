@@ -18,6 +18,7 @@ kotlin {
             implementation(libs.androidx.sqlite.bundled)
             implementation(libs.paging.compose.common)
             implementation(libs.paging.common)
+            implementation(libs.androidx.room.paging)
         }
     }
 

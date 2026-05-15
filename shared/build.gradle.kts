@@ -27,11 +27,17 @@ kotlin {
     }
     
     sourceSets {
+        androidMain.dependencies {
+            implementation(libs.koin.android)
+        }
+
         commonMain.dependencies {
             api(project(":core:models"))
             api(project(":core:datasource"))
+            api(project(":core:database"))
             implementation(libs.androidx.room.runtime)
             implementation(libs.androidx.sqlite.bundled)
+            implementation(libs.koin.core)
         }
 
         commonTest.dependencies {

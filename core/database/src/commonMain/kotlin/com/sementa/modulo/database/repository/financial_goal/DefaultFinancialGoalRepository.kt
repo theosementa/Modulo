@@ -15,7 +15,7 @@ class DefaultFinancialGoalRepository(
         return financialGoalDao.getCurrentAmount(goalId)
     }
 
-    override suspend fun saveGoal(goalEntity: FinancialGoalEntity): FinancialGoalEntity {
+    override suspend fun saveGoal(goalEntity: FinancialGoalEntity) {
         return financialGoalDao.saveGoal(goalEntity)
     }
 
