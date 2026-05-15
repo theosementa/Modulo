@@ -33,3 +33,6 @@ dependencyResolutionManagement {
 
 include(":composeApp")
 include(":shared")
+include(":core:models")
+include(":core:database")
+include(":core:datasource")
